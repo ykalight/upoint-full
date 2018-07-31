@@ -1,0 +1,33 @@
+.button{
+    margin:22px 0;
+    font-size:1.2em;
+    color: #fff;
+    @include border-radius(24px);
+    padding:10px 3em;
+    display:inline-block;
+
+    .more &{
+        color: $app-blue;
+        border: solid 1px $app-blue;
+        font-size:1em;
+        padding:8px 2em;
+        margin:42px 0;
+        &:hover{
+            border-color: darken($app-blue, 20%);
+            color: darken($app-blue, 20%);
+        }
+    }
+
+    @media only screen and (max-width: $medium) {
+        font-size:1em;
+    }
+    @media only screen and (max-width: $small) {
+        font-size:.94em;
+        padding:8px 2.6em;
+        .more &{
+            font-size:.9em;
+            padding:4px 2em;
+            margin:18px 0;
+        }
+    }
+}

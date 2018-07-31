@@ -1,0 +1,1351 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "FSThriveElliotWeb-Light";
+  src: url("../font/EOT/FSThriveElliotWeb-Light.eot");
+  src: local("☺"), url("../font/WOFF/FSThriveElliotWeb-Light.woff") format("woff"), url("../font/Web_TTF/FSThriveElliotWeb-Light.ttf") format("truetype"), url("../font/SVG/FSThriveElliotWeb-Light.svg") format("svg");
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FSThriveElliotWeb-Regular";
+  src: url("../font/EOT/FSThriveElliotWeb-Regular.eot");
+  /* IE9 Compat Modes */
+  src: local("☺"), url("../font/WOFF/FSThriveElliotWeb-Regular.woff") format("woff"), url("../font/SVG/FSThriveElliotWeb-Regular.svg") format("svg"), url("../font/Web_TTF/FSThriveElliotWeb-Regular.ttf") format("truetype"), url("../font/WOFF2/FSThriveElliotWeb-Regular.woff2") format("woff2");
+  /* Modern Browsers */
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FSThriveElliotWeb-Bold";
+  src: url("../font/EOT/FSThriveElliotWeb-Bold.eot");
+  src: local("☺"), url("../font/WOFF/FSThriveElliotWeb-Bold.woff") format("woff"), url("../font/SVG/FSThriveElliotWeb-Bold.svg") format("svg"), url("../font/Web_TTF/FSThriveElliotWeb-Bold.ttf") format("truetype"), url("../font/WOFF2/FSThriveElliotWeb-Bold.woff2") format("woff2");
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+  font-style: bold;
+}
+@font-face {
+  font-family: "FSThriveElliotWeb-Heavy";
+  src: url("../font/EOT/FSThriveElliotWeb-Heavy.eot");
+  src: local("☺"), url("../font/WOFF/FSThriveElliotWeb-Heavy.woff") format("woff"), url("../font/SVG/FSThriveElliotWeb-Heavy.svg") format("svg"), url("../font/Web_TTF/FSThriveElliotWeb-Heavy.ttf") format("truetype"), url("../font/WOFF2/FSThriveElliotWeb-Heavy.woff2") format("woff2");
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: bold;
+  font-style: bold;
+}
+html {
+  font-size: 62.5%;
+}
+
+body, ul, ol, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, legend, input, textarea, select, blockquote, p, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+fieldset, legend, img {
+  border: 0;
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio, canvas, progress, video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b, strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button, select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.App-banner .button {
+  background-color: #2bafd7;
+}
+.App-banner .button:hover {
+  background-color: #196a83;
+}
+
+footer {
+  color: #8294a9;
+}
+footer a {
+  color: #ededed;
+}
+footer .border {
+  border-top: solid 1px #54667b;
+}
+
+.Card .cardTop.nonexpand .arrow a {
+  font-size: 0.9em;
+}
+.Card .cardTop.nonexpand .arrow :first-child {
+  color: #2bafd7;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup {
+  display: block;
+}
+
+sup {
+  font-size: 100%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: whitesmoke;
+}
+body #root {
+  font-family: FSThriveElliotWeb-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  transition: 0.4s;
+  text-decoration: none;
+  color: #2bafd7;
+  outline: none;
+}
+a:hover {
+  color: #81cfe7;
+}
+
+.container {
+  width: 99%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+@media only screen and (max-width: 740px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.card-container {
+  width: 90%;
+}
+@media only screen and (max-width: 920px) {
+  .card-container {
+    width: 96%;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .card-container {
+    width: 99%;
+  }
+}
+
+footer .container {
+  width: 96%;
+}
+@media only screen and (max-width: 920px) {
+  footer .container {
+    width: 98%;
+  }
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+header {
+  transition: 0.2s;
+  color: #fff;
+  background-color: rgba(5, 26, 52, 0.8);
+  text-align: center;
+  padding: 0 0 0 12px;
+}
+header.active {
+  box-shadow: 0 -16px 18px 12px #000;
+}
+header > div {
+  display: grid;
+  grid-template-columns: 240px auto 54px 54px 54px;
+  grid-gap: 0;
+  grid-auto-rows: 54px;
+  align-items: center;
+}
+header > div #mnav {
+  display: none;
+}
+header > div .Head-logo img {
+  transition: 0.4s;
+  height: 26px;
+  max-width: 240px;
+  margin: 0 4px;
+}
+@media only screen and (max-width: 920px) {
+  header > div {
+    grid-template-columns: auto auto 54px 54px 54px;
+    grid-auto-rows: auto;
+  }
+  header > div .Head-logo img {
+    height: 18px;
+    max-width: 90px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  header > div {
+    grid-template-columns: 54px auto 54px 54px;
+  }
+  header > div #mnav {
+    display: block;
+    padding-top: 8px;
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+    margin-right: 12px;
+  }
+  header > div .Head-profile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 740px) {
+  header {
+    padding: 0;
+  }
+}
+header .Head-search {
+  background-color: #051a34;
+}
+header .Head-search:hover {
+  background-color: #082850;
+}
+header .Head-profile:hover {
+  background-color: rgba(5, 26, 52, 0.4);
+}
+header .Head-message:hover {
+  background-color: rgba(5, 26, 52, 0.4);
+}
+
+nav li {
+  font-size: 0.85em;
+  display: inline;
+  margin: 2em;
+}
+nav li a {
+  color: #fff;
+}
+@media only screen and (max-width: 1080px) {
+  nav li {
+    margin: 1em;
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 920px) {
+  nav li {
+    margin: 0.8em;
+    font-size: 0.75em;
+  }
+}
+
+.navSlider {
+  z-index: 999;
+  background-color: #2f4258;
+}
+
+@media only screen and (max-width: 920px) {
+  .slide-pane__header {
+    visibility: hidden;
+  }
+
+  .slide-pane__content {
+    padding: 4px 12px 0 0;
+  }
+  .slide-pane__content nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .slide-pane__content nav li {
+    margin: 0;
+    font-size: 10empx;
+    font-size: 1emrem;
+    font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em !important;
+    display: block;
+    padding: 18px;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  }
+}
+.App-banner {
+  background-color: #fff;
+}
+.App-banner img {
+  height: 460px;
+}
+.App-banner .banner-content {
+  top: 100px;
+  width: 50%;
+  min-width: 420px;
+  padding: 18px 58px;
+}
+.App-banner h1 {
+  font-size: 3em;
+  line-height: 1em;
+}
+.App-banner p {
+  font-size: 1.3em;
+  margin: 8px 0;
+}
+@media only screen and (max-width: 1080px) {
+  .App-banner h1 {
+    font-size: 2.6em;
+  }
+  .App-banner p {
+    font-size: 1.1em;
+    margin: 6px 0;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .App-banner img {
+    height: 380px;
+  }
+  .App-banner .banner-content {
+    top: 70px;
+    width: 60%;
+  }
+  .App-banner h1 {
+    font-size: 2.2em;
+  }
+  .App-banner p {
+    font-size: 0.9em;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .App-banner img {
+    height: 280px;
+  }
+  .App-banner .banner-content {
+    transition: 0.4s;
+    top: 0;
+    padding: 82px 18px 28px 18px;
+    min-width: auto;
+    width: 100%;
+    height: 280px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  }
+  .App-banner .banner-content h1, .App-banner .banner-content p {
+    color: #fff;
+  }
+  .App-banner h1 {
+    font-size: 1.8em;
+  }
+}
+
+.Card {
+  transition: 0.4s;
+  margin: 8px 0;
+  background-color: #fff;
+  border: solid 1px #d1d2d4;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+.Card .cardTop {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 30px 2fr 2fr 80px;
+  grid-gap: 18px;
+  align-items: center;
+  min-height: 130px;
+  padding: 12px;
+  transition: 0.4s;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 14px;
+  border-radius: 14px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+.Card .cardTop .alert {
+  width: 20px;
+  height: 40px;
+  background: transparent url("../img/icon_art.svg") -19px -278px no-repeat;
+  background-size: 900px;
+}
+.Card .cardTop .arrow {
+  justify-self: center;
+}
+.Card .cardTop .arrow :first-child {
+  width: 40px;
+  height: 40px;
+  color: #b3b3b3;
+}
+.Card .cardTop:hover {
+  background-color: #fafafa;
+  -moz-box-shadow: 0 -1px 8px -4px #000;
+  -webkit-box-shadow: 0 -1px 8px -4px #000;
+  box-shadow: 0 -1px 8px -4px #000;
+}
+.Card h3 {
+  font-size: 1.3em;
+  padding-right: 52px;
+}
+.Card.active .cardTop:hover {
+  /* usage @import border-radius-custom(12px, 0, 10px, 0) */
+  -webkit-border-top-left-radius: 18px;
+  -webkit-border-top-right-radius: 18px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background-clip: padding-box;
+}
+.Card .panel {
+  display: none;
+  overflow: hidden;
+  padding: 18px;
+}
+.Card .panel p {
+  font-size: 2em;
+}
+.Card .panel h5 {
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-family: FSThriveElliotWeb-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #6e6e6e;
+  padding: 12px 0 6px 0;
+  text-transform: uppercase;
+  border-bottom: solid 1px #ccc;
+}
+@media only screen and (max-width: 920px) {
+  .Card .cardTop {
+    padding: 8px;
+  }
+  .Card .cardTop h3 {
+    font-size: 1.1em;
+    padding-right: 46px;
+  }
+  .Card .cardTop .arrow :first-child {
+    width: 34px;
+    height: 34px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .Card {
+    margin: 2px 0;
+    /* usage @import border-radius(12px) */
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+  }
+  .Card.active .cardTop:hover {
+    /* usage @import border-radius-custom(12px, 0, 10px, 0) */
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -webkit-border-bottom-right-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    background-clip: padding-box;
+  }
+  .Card .cardTop {
+    min-height: 90px;
+    grid-template-columns: 20px auto 100px 40px;
+    grid-gap: 8px;
+    /* usage @import border-radius(12px) */
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+  }
+  .Card .cardTop .alert {
+    width: 14px;
+    height: 28px;
+    background: transparent url("../img/icon_art.svg") -14px -202px no-repeat;
+    background-size: 640px;
+  }
+  .Card .cardTop h3 {
+    font-size: 1em;
+    padding-right: 12px;
+  }
+  .Card .cardTop .arrow :first-child {
+    width: 28px;
+    height: 28px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Card .cardTop h3 {
+    font-size: 0.9em;
+  }
+}
+
+.button {
+  margin: 22px 0;
+  font-size: 1.2em;
+  color: #fff;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  padding: 10px 3em;
+  display: inline-block;
+}
+.more .button {
+  color: #2bafd7;
+  border: solid 1px #2bafd7;
+  font-size: 1em;
+  padding: 8px 2em;
+  margin: 42px 0;
+}
+.more .button:hover {
+  border-color: #196a83;
+  color: #196a83;
+}
+@media only screen and (max-width: 920px) {
+  .button {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .button {
+    font-size: 0.94em;
+    padding: 8px 2.6em;
+  }
+  .more .button {
+    font-size: 0.9em;
+    padding: 4px 2em;
+    margin: 18px 0;
+  }
+}
+
+.Related-block {
+  background-color: #fff;
+}
+.Related-block .relatedItems {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+  justify-items: center;
+  align-items: top;
+  padding: 12px;
+}
+.Related-block .relatedItems a.related {
+  color: #2bafd7;
+  transition: 0.8s;
+  display: block;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  padding: 18px;
+}
+.Related-block .relatedItems a.related h4 {
+  font-size: 12px;
+  font-size: 1.2rem;
+  font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 12px auto 0 auto;
+  max-width: 220px;
+}
+.Related-block .relatedItems a.related p {
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #878787;
+  margin: 12px auto 0 auto;
+  max-width: 220px;
+}
+.Related-block .relatedItems a.related img {
+  max-width: 130px;
+  max-height: 130px;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  margin: auto;
+}
+.Related-block .relatedItems a.related:hover {
+  background-color: #f0f0f0;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+@media only screen and (max-width: 920px) {
+  .Related-block .relatedItems {
+    grid-gap: 12px;
+  }
+  .Related-block .relatedItems a.related {
+    margin: 18px;
+  }
+  .Related-block .relatedItems a.related h4 {
+    font-size: 10px;
+    font-size: 1rem;
+    font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    max-width: 200px;
+  }
+  .Related-block .relatedItems a.related p {
+    font-size: 8px;
+    font-size: 0.8rem;
+    font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 10px;
+    max-width: 200px;
+  }
+  .Related-block .relatedItems a.related img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+}
+@media only screen and (max-width: 740px) {
+  .Related-block .relatedItems {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    justify-items: start;
+    align-items: center;
+  }
+  .Related-block .relatedItems a.related {
+    border-bottom: solid 1px #dbdbdb;
+    display: grid;
+    grid-template-columns: 80px auto;
+    align-items: center;
+    margin: 0;
+    padding: 22px;
+    text-align: left;
+    width: 100%;
+  }
+  .Related-block .relatedItems a.related img {
+    grid-area: 1/1/3/2;
+    max-width: 60px;
+    max-height: 60px;
+    margin: 0;
+  }
+  .Related-block .relatedItems a.related h4 {
+    grid-area: 1/2/2/3;
+    align-self: end;
+    font-size: 10px;
+    font-size: 1rem;
+    font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    max-width: none;
+  }
+  .Related-block .relatedItems a.related p {
+    grid-area: 2/2/3/3;
+    align-self: start;
+    font-size: 8px;
+    font-size: 0.8rem;
+    font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0;
+    max-width: none;
+  }
+  .Related-block .relatedItems a.related:hover {
+    background-color: transparent;
+    /* usage @import border-radius(12px) */
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+  }
+}
+
+.relatedAction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 18px;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 88px;
+  padding: 12px 0;
+  border-top: solid 1px #ccc;
+}
+.relatedAction a {
+  color: #555555;
+  text-align: center;
+  font-size: 0.9em;
+}
+.relatedAction a:hover {
+  color: #2bafd7;
+}
+.relatedAction a:before {
+  content: "";
+  width: 44px;
+  height: 40px;
+  display: block;
+  margin: 4px auto;
+  background: transparent url("../img/icon_art.svg") 0px 0px no-repeat;
+  background-size: 840px;
+}
+.relatedAction .icon-person:before {
+  background-position: -105px -201px;
+}
+.relatedAction .icon-piechart:before {
+  background-position: -226px -431px;
+  background-size: 920px;
+}
+.relatedAction .icon-barchart:before {
+  background-position: -266px -564px;
+  background-size: 1070px;
+}
+.relatedAction .icon-people:before {
+  background-position: -240px -590px;
+  background-size: 980px;
+}
+.relatedAction .icon-time:before {
+  background-position: -108px -326px;
+}
+.relatedAction .icon-idcard:before {
+  background-position: -115px -149px;
+  background-size: 910px;
+}
+@media only screen and (max-width: 1080px) {
+  .relatedAction a {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 920px) {
+  .relatedAction {
+    grid-gap: 8px;
+    grid-template-rows: unset;
+  }
+  .relatedAction a {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 12px;
+    min-height: 118px;
+    padding: 12px;
+    /* usage @import border-radius(12px) */
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+  }
+}
+@media only screen and (max-width: 740px) {
+  .relatedAction a {
+    font-size: 0.7em;
+    min-height: 108px;
+    padding: 8px;
+  }
+}
+
+.react-drawer-drawer {
+  position: relative;
+  background-color: #ededed;
+  height: auto;
+}
+
+.react-drawer-drawer {
+  position: relative;
+  background-color: #ededed;
+  height: auto;
+}
+
+.subnav-container {
+  margin-top: 90px;
+  width: 90%;
+}
+.subnav-container h1 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-family: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 18px;
+}
+.subnav-container .subNav {
+  display: flex;
+  justify-content: center;
+}
+.subnav-container .subNav a {
+  width: 200px;
+  height: 120px;
+  display: inline-block;
+  text-align: center;
+  color: #878787;
+  border-right: solid 1px #ccc;
+  padding: 12px;
+}
+.subnav-container .subNav a[class^=subicon]:before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: auto;
+  background: transparent url("../img/icon_art.svg") -9999px -9999px no-repeat;
+  background-size: 1460px;
+}
+.subnav-container .subNav a.subicon-circle-graph:before {
+  background-image: url("../img/icon_art.svg");
+  background-position: -23px -547px;
+  background-size: 1460px;
+}
+.subnav-container .subNav a.subicon-pigbank1:before {
+  background-image: url("../img/icon_art.svg");
+  background-position: -21px -668px;
+  background-size: 1460px;
+}
+.subnav-container .subNav a.subicon-people:before {
+  background-image: url("../img/icon_art.svg");
+  background-position: -18px -877px;
+  background-size: 1460px;
+}
+.subnav-container .subNav a.subicon-pigbank2:before {
+  background-image: url("../img/icon_art.svg");
+  background-position: -19px -774px;
+  background-size: 1460px;
+}
+.subnav-container .subNav a.subicon-bar-graph:before {
+  background-image: url("../img/icon_art.svg");
+  background-position: -20px -963px;
+  background-size: 1430px;
+}
+
+footer {
+  background-color: #2f4258;
+  padding: 36px 0;
+  font-size: 0.8em;
+}
+footer > div {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 8px;
+  align-items: center;
+}
+footer > div .flogo {
+  justify-self: start;
+}
+footer > div .flogo img {
+  width: 100px;
+  margin-bottom: 8px;
+}
+footer > div .links {
+  justify-self: center;
+}
+footer > div .links li {
+  display: inline;
+  margin: 0 1em;
+}
+footer > div .social {
+  justify-self: end;
+}
+footer > div .copyright {
+  grid-area: 2/1/3/6;
+  margin-top: 20px;
+  padding: 28px 0 0 0;
+}
+@media only screen and (max-width: 1080px) {
+  footer {
+    font-size: 0.75em;
+  }
+}
+@media only screen and (max-width: 920px) {
+  footer > div {
+    grid-template-columns: unset;
+    grid-template-rows: auto;
+    grid-gap: 4px;
+  }
+  footer > div .flogo {
+    grid-area: 3;
+    margin: 0;
+    justify-self: center;
+  }
+  footer > div .flogo img {
+    width: 80px;
+    margin: 0 auto 8px auto;
+  }
+  footer > div .social {
+    justify-self: center;
+    margin: 38px 0;
+    text-align: center;
+  }
+  footer > div .copyright {
+    grid-area: unset;
+    margin-top: 2px;
+    padding: 12px 0 0 0;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 740px) {
+  footer {
+    padding: 12px;
+  }
+  footer > div .links {
+    justify-self: unset;
+  }
+  footer > div .links li {
+    margin: 0;
+    padding: 14px 0;
+    display: block;
+    border-bottom: solid 1px #54667b;
+  }
+  footer > div .copyright.border {
+    border: 0;
+  }
+}
+
+.visual > div {
+  width: 100%;
+  height: 80px;
+  background: transparent url("../img/tempGraph_01.svg") 0 50% no-repeat;
+  background-size: contain;
+}
+.visual > div#tempGraph_01 {
+  background-image: url("../img/tempGraph_01.svg");
+  height: 66px;
+}
+.visual > div#tempGraph_02 {
+  background-image: url("../img/tempGraph_02.svg");
+  height: 90px;
+}
+.visual > div#tempGraph_03 {
+  background-image: url("../img/tempGraph_03.svg");
+  height: 70px;
+}
+.visual > div#tempGraph_07 {
+  background-image: url("../img/tempGraph_07.svg");
+  height: 70px;
+}
+@media only screen and (max-width: 740px) {
+  .visual > div#tempGraph_01 {
+    background-image: url("../img/tempGraph_14.svg");
+    height: 66px;
+  }
+  .visual > div#tempGraph_02 {
+    background-image: url("../img/tempGraph_16.svg");
+    height: 62px;
+  }
+  .visual > div#tempGraph_03 {
+    background-image: url("../img/tempGraph_05.svg");
+    height: 62px;
+  }
+  .visual > div#tempGraph_07 {
+    background-image: url("../img/tempGraph_15.svg");
+    height: 58px;
+  }
+}
+
+.tempGraph {
+  width: 100%;
+  height: 340px;
+  margin: 28px 0;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tempGraph#tempGraph_01dt {
+  background-image: url("../img/tempGraph_01dt.svg");
+}
+.tempGraph#tempGraph_02dt {
+  background-image: url("../img/tempGraph_02dt.svg");
+  height: 320px;
+}
+.tempGraph#tempGraph_03dt {
+  background-image: url("../img/tempGraph_03dt.svg");
+  height: 130px;
+}
+.tempGraph#tempGraph_07dt {
+  background-image: url("../img/tempGraph_07dt.svg");
+  height: 130px;
+}
+@media only screen and (max-width: 740px) {
+  .tempGraph#tempGraph_01dt {
+    height: 160px;
+  }
+  .tempGraph#tempGraph_02dt {
+    height: 140px;
+  }
+  .tempGraph#tempGraph_03dt {
+    height: 80px;
+  }
+  .tempGraph#tempGraph_07dt {
+    height: 100px;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

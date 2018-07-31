@@ -1,0 +1,37 @@
+.relatedAction{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 18px;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: 88px;
+
+    padding:12px 0; 
+    border-top:solid 1px $app-gray;
+
+    a{color: $app-darkgray; text-align:center; font-size:.9em;
+        &:hover{color: $app-blue}
+    }
+    a:before{
+        content: ''; width:44px; height:40px; display:block; margin:4px auto;
+        background: transparent url('../img/icon_art.svg') 0px 0px no-repeat; background-size:840px;
+    }
+    .icon-person:before{background-position: -105px -201px}
+    .icon-piechart:before{background-position: -226px -431px; background-size:920px}
+    .icon-barchart:before{background-position: -266px -564px; background-size:1070px}
+    .icon-people:before{background-position: -240px -590px; background-size:980px}
+    .icon-time:before{background-position: -108px -326px}
+    .icon-idcard:before{background-position: -115px -149px; background-size:910px}
+
+    @media only screen and (max-width: $large) { 
+        a{font-size:.8em}
+    }
+    @media only screen and (max-width: $medium) {
+        grid-gap: 8px;
+        grid-template-rows: unset; 
+        a{width:100%; background-color: lighten($app-lightgray, 3%); padding:12px; min-height:118px; padding:12px; @include border-radius(6px)}
+    }
+    @media only screen and (max-width: $small) {
+        a{font-size:.7em; min-height:108px; padding:8px; }
+    }
+}

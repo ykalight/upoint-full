@@ -1,0 +1,38 @@
+.visual > div{
+    width:100%; height:80px;
+    background: transparent url('../img/tempGraph_01.svg') 0 50% no-repeat; background-size:contain;
+
+    &#tempGraph_01{background-image: url('../img/tempGraph_01.svg'); height:66px;}
+    &#tempGraph_02{background-image: url('../img/tempGraph_02.svg'); height:90px;}
+    &#tempGraph_03{background-image: url('../img/tempGraph_03.svg'); height:70px;}
+    &#tempGraph_07{background-image: url('../img/tempGraph_07.svg'); height:70px;}
+
+    @media only screen and (max-width: $small) {
+        &#tempGraph_01{background-image: url('../img/tempGraph_14.svg'); height:66px;}
+        &#tempGraph_02{background-image: url('../img/tempGraph_16.svg'); height:62px;}
+        &#tempGraph_03{background-image: url('../img/tempGraph_05.svg'); height:62px;}
+        &#tempGraph_07{background-image: url('../img/tempGraph_15.svg'); height:58px;}
+    }
+}
+
+// Detail expand
+ .tempGraph{
+    width:100%; height:340px; margin:28px 0;
+    background-color: transparent;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size:contain;
+
+    &#tempGraph_01dt{background-image: url('../img/tempGraph_01dt.svg')}
+    &#tempGraph_02dt{background-image: url('../img/tempGraph_02dt.svg'); height:320px;}
+    &#tempGraph_03dt{background-image: url('../img/tempGraph_03dt.svg'); height:130px;}
+    &#tempGraph_07dt{background-image: url('../img/tempGraph_07dt.svg'); height:130px;}
+
+    @media only screen and (max-width: $small) {
+        &#tempGraph_01dt{height:160px;}
+        &#tempGraph_02dt{height:140px;}
+        &#tempGraph_03dt{height:80px;}
+        &#tempGraph_07dt{height:100px;}
+
+    }
+}

@@ -1,0 +1,48 @@
+.subnav-container{
+    h1{@include font(1.8, 'Regular'); margin-bottom:18px;}
+    margin-top:90px;
+    width:90%;
+
+    .subNav{
+        display:flex; justify-content: center;
+        a{
+            width:200px;
+            height:120px; 
+            display:inline-block; 
+            text-align: center;
+            color: $app-medgray; 
+            border-right:solid 1px $app-gray; 
+            padding:12px;
+
+            &[class^="subicon"]:before {
+                content: ''; width:80px; height:80px; display:block; margin:auto;
+                background: transparent url('../img/icon_art.svg') -9999px -9999px no-repeat; background-size:1460px;
+            }
+            &.subicon-circle-graph:before {
+                background-image: url('../img/icon_art.svg'); 
+                background-position: -23px -547px; 
+                background-size:1460px;
+            }
+            &.subicon-pigbank1:before {
+                background-image: url('../img/icon_art.svg'); 
+                background-position: -21px -668px; 
+                background-size:1460px;
+            }
+            &.subicon-people:before {
+                background-image: url('../img/icon_art.svg'); 
+                background-position: -18px -877px; 
+                background-size:1460px;
+            }
+            &.subicon-pigbank2:before {
+                background-image: url('../img/icon_art.svg'); 
+                background-position: -19px -774px; 
+                background-size:1460px;
+            }
+            &.subicon-bar-graph:before {
+                background-image: url('../img/icon_art.svg'); 
+                background-position: -20px -963px; 
+                background-size:1430px;
+            }
+        }
+    }
+}

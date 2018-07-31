@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'FSThriveElliotWeb-Light';
+    src: url('../font/EOT/FSThriveElliotWeb-Light.eot');
+    src: local('☺'),
+        url('../font/WOFF/FSThriveElliotWeb-Light.woff') format('woff'),
+        url('../font/Web_TTF/FSThriveElliotWeb-Light.ttf') format('truetype'),
+        url('../font/SVG/FSThriveElliotWeb-Light.svg') format('svg');
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSThriveElliotWeb-Regular';
+    src: url('../font/EOT/FSThriveElliotWeb-Regular.eot'); /* IE9 Compat Modes */
+    src: local('☺'),
+        url('../font/WOFF/FSThriveElliotWeb-Regular.woff') format('woff'), /* Modern Browsers */
+        url('../font/SVG/FSThriveElliotWeb-Regular.svg') format('svg'), /* Legacy iOS */
+        url('../font/Web_TTF/FSThriveElliotWeb-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+        url('../font/WOFF2/FSThriveElliotWeb-Regular.woff2') format('woff2'); /* Modern Browsers */
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'FSThriveElliotWeb-Bold';
+    src: url('../font/EOT/FSThriveElliotWeb-Bold.eot');
+    src: local('☺'),
+        url('../font/WOFF/FSThriveElliotWeb-Bold.woff') format('woff'),
+        url('../font/SVG/FSThriveElliotWeb-Bold.svg') format('svg'),
+        url('../font/Web_TTF/FSThriveElliotWeb-Bold.ttf') format('truetype'),
+        url('../font/WOFF2/FSThriveElliotWeb-Bold.woff2') format('woff2');
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: bold; font-style: bold;
+}
+
+@font-face {
+    font-family: 'FSThriveElliotWeb-Heavy';
+    src: url('../font/EOT/FSThriveElliotWeb-Heavy.eot');
+    src: local('☺'),
+        url('../font/WOFF/FSThriveElliotWeb-Heavy.woff') format('woff'),
+        url('../font/SVG/FSThriveElliotWeb-Heavy.svg') format('svg'),
+        url('../font/Web_TTF/FSThriveElliotWeb-Heavy.ttf') format('truetype'),
+        url('../font/WOFF2/FSThriveElliotWeb-Heavy.woff2') format('woff2');
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: bold; font-style: bold;
+}

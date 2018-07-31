@@ -1,0 +1,29 @@
+[
+    {
+        "img": "/img/tempPhoto_06.jpg",
+        "title": "Lorem ipsum extra",
+        "small": "Lorem ipsum extra lorem ipsum extra.",
+        "destination": "#"
+    },
+    {
+        "img": "/img/tempPhoto_07.jpg",
+        "title": "Lorem ipsum extra",
+        "small": "Lorem ipsum doloe amit lorem amit.",
+        "destination": "#"
+    },
+    {
+        "img": "/img/tempPhoto_08.jpg",
+        "title": "WLorem ipsum extra?",
+        "small": "Lorem ipsum extra lorem ipsum extra.",
+        "destination": "#"
+    },
+    {
+        "img": "/img/tempPhoto_09.jpg",
+        "title": "Lorem extra...",
+        "small": "Lorem ipsum extra lorem ipsum extra.",
+        "destination": "#"
+    }     
+]
+  
+  
+  

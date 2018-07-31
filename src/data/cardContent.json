@@ -1,0 +1,100 @@
+[
+  {
+    "icon": "alert",
+    "title": "You may not have enough for retirement",
+    "text": "",
+    "visual": "tempGraph_01",
+    "expand": 
+      {
+        "title": "Retirement Income Projection Modeler",
+        "visual": "tempGraph_01dt",
+        "actions": 
+        [
+            {
+              "label": "Chat with a Retirement Specialist",
+              "classname": "person",
+              "destination": "#"
+            },
+            {
+              "label": "Change Contribution",
+              "classname": "piechart",
+              "destination": "#"
+            },
+            {
+              "label": "Change Investments",
+              "classname": "barchart",
+              "destination": "#"
+            }
+        ]
+      }
+    },
+    {
+      "icon": "",
+      "title": "Your health plans & deductibles",
+      "text": "",
+      "visual": "tempGraph_02",
+      "expand":
+        {
+          "title": "Your Health Plans",
+          "visual": "tempGraph_02dt",
+          "actions": 
+          [
+              {
+                "label": "Insurance Cards",
+                "classname": "idcard",
+                "destination": "#"
+              },
+              {
+                "label": "Change Beneficiaries",
+                "classname": "people",
+                "destination": "#"
+              },
+              {
+                "label": "Chat with a Benefits Specialist",
+                "classname": "person",
+                "destination": "#"
+              }
+          ]
+        }
+    },
+    {
+      "icon": "",
+      "title": "Your well-being score has improved 47%",
+      "text": "",
+      "visual": "tempGraph_03",
+      "expand":
+        {
+          "title": "Your Wellbeing Snapshot",
+          "visual": "tempGraph_03dt",
+          "actions": 
+          [
+              {
+                "label": "Wellness Tips and Advice",
+                "classname": "person",
+                "destination": "#"
+              }
+          ]
+        }
+    },
+    {
+      "icon": "",
+      "title": "You have 50.5 hours of unused PTO",
+      "text": "",
+      "visual": "tempGraph_07",
+      "expand":
+        {
+          "title": "Your Time-Off Snapshot",
+          "visual": "tempGraph_07dt",
+          "actions": 
+          [
+              {
+                "label": "Timesheet",
+                "classname": "time",
+                "destination": "#"
+              }
+          ]
+        }
+    }
+  ]
+
+

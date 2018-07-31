@@ -1,0 +1,40 @@
+
+@mixin font($sizeValue: 1.6, $weight: 'Regular') {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+  @if $weight == 'Light' {
+      font-family: $font-family
+  } @else if $weight == 'Bold' {
+      font-family: $font-family-bold
+  } @else if $weight == 'Heavy' {
+      font-family: $font-family-heavy
+  } @else {
+      font-family: $font-family-regular
+  }
+}
+
+@mixin boxshadow($h-offset: 0, $v-offset: 9px, $blur: 57px, $spread: 1px, $color: rgba(0, 0, 0, 0.6)) {
+    -moz-box-shadow: $h-offset $v-offset $blur $spread $color;
+ -webkit-box-shadow: $h-offset $v-offset $blur $spread $color;
+         box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
+@mixin border-radius($radius) {
+    /* usage @import border-radius(12px) */
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+    background-clip: padding-box;  /* stops bg color from leaking outside the border: */
+  }
+  
+  @mixin border-radius-custom($radiusTL, $radiusTR, $radiusBR, $radiusBL) {
+    /* usage @import border-radius-custom(12px, 0, 10px, 0) */
+    -webkit-border-top-left-radius: $radiusTL;
+    -webkit-border-top-right-radius: $radiusTR;
+    -webkit-border-bottom-right-radius: $radiusBR;
+    -webkit-border-bottom-left-radius: $radiusBL;
+    border-top-left-radius: $radiusTL;
+    border-top-right-radius: $radiusTR;
+    border-bottom-right-radius: $radiusBR;
+    border-bottom-left-radius: $radiusBL;
+    background-clip: padding-box;
+  }

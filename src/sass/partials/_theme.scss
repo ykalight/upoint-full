@@ -1,0 +1,36 @@
+
+$background-color: lighten($app-lightgray, 3%);
+$link-color: $app-blue;
+
+$header-text-color: #fff;
+
+$card-bg-color: #fff;
+$card-border-color: #d1d2d4;
+
+.App-banner .button{
+    background-color: $app-blue;
+    &:hover{background-color: darken($app-blue, 20%)}
+}
+
+footer{
+    color: $blue-gray-light;
+    a{color: $app-lightgray}
+    .border{border-top: solid 1px darken($blue-gray-light, 18%)}
+}
+
+
+// non expand home cards
+.Card{
+    .cardTop{
+        &.nonexpand{
+            .arrow{
+                a{font-size:.9em}
+                :first-child{color: $app-blue}
+            }   
+        }
+    }
+}
+
+
+
+

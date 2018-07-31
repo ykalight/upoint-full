@@ -1,0 +1,34 @@
+// base config ======
+// $font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family: FSThriveElliotWeb-Light, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-regular: FSThriveElliotWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-bold: FSThriveElliotWeb-Bold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-heavy: FSThriveElliotWeb-Heavy, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-base-size: 16px;
+$use-mozilla-ellipsis-binding: true;
+$content-width : 1200px;
+
+// break points
+$xlarge:    1180px;
+$large:     1080px;
+$medium:    920px;
+$small:     740px;
+$xsmall:    480px;
+$xxsmall:   320px;
+
+$app-yellow: #ffd216;
+$app-green: #a7ce39;
+$app-orange : #ea7600;
+
+$app-gray : #ccc;
+$app-lightgray : lighten($app-gray, 13%);
+$app-medgray : darken($app-gray, 27%);
+$app-darkgray : darken($app-gray, 46.5%);
+
+$blue-gray : #676576;
+$blue-gray-dark : #2f4258;
+$blue-dark : rgba(5, 26, 52, 1);
+$blue-gray-light: #8294a9;
+
+$app-red : #c00;
+$app-blue: #2bafd7;
