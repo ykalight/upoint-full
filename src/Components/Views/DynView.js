@@ -62,7 +62,7 @@ class DynView extends Component {
   render() {
     return (
       <Router>
-        <div>
+        <div className="dviewWrapper">
           <div className="container subnav-container">
           <h1>{this.props.pgtitle}</h1>
 
@@ -86,15 +86,12 @@ class DynView extends Component {
             noOverlay={this.state.noOverlay}>
             <i onClick={this.closeDrawer} className="icono-cross"></i>
             
-            <div>
+            <div className="dviewContentContainer">
                 <div className="container" style={this.props.divstyle}>
-                      ...Card / Content<br />
-                      ...Card / Content<br />
-                      ...Card / Content<br />
-                      ...Card / Content<br />
-                      ...Card / Content<br />
-                      ...Card / Content<br />
-                      ...Card / Content<br />
+                  <div className="tempCards">
+                    <p>{this.props.temptext}</p>
+                    <p style={{fontSize: '.9em', fontStyle: 'italic', paddingTop:'28px'}}>Prototype placeholder</p>
+                  </div>
                 </div>
             </div>
 

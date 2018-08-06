@@ -1,27 +1,22 @@
 [
     {
         "img": "circle-graph",
-        "title": "401(k) account",
-        "destination": "#"
-    },
-    {
-        "img": "pigbank1",
-        "title": "Savings 2",
+        "title": "Navigation",
         "destination": "#"
     },
     {
         "img": "people",
-        "title": "Savings 3",
+        "title": "Navigation",
         "destination": "#"
     },
     {
         "img": "pigbank2",
-        "title": "Lorem extra...4",
+        "title": "Navigation",
         "destination": "#"
     },
     {
         "img": "bar-graph",
-        "title": "Lorem ipsum extra.. 5",
+        "title": "Navigation",
         "destination": "#"
     }    
 ]

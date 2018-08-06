@@ -11,7 +11,10 @@
         .alert{width:20px; height:40px; background: transparent url('../img/icon_art.svg') -19px -278px no-repeat; background-size:900px}
         .arrow{
             justify-self: center;
-            :first-child{width: 40px; height: 40px; color: darken($app-gray, 10%)}
+            :first-child{width: 24px; height: 24px; color: darken($app-gray, 10%)}
+            :before{
+                content: 'More ';
+            }
         }
 
         transition: 0.4s;
@@ -49,15 +52,20 @@
 
     @media only screen and (max-width: $medium) {
         .cardTop{
-            padding:8px;
+            padding:18px 8px;
             h3{font-size:1.1em; padding-right:46px}
             .arrow{
-                :first-child{width: 34px; height: 34px}
+                a span{display:none}
+                :before{
+                    content: '';
+                }
             }
         }
     }
     @media only screen and (max-width: $small) {
-        &.active{.cardTop{&:hover{@include border-radius-custom(6px, 6px, 0, 0);}}}
+        border-top:0; border-right:0; border-left:0;
+        border-color: $card-border-color-mobile;
+        &.active{.cardTop{&:hover{@include border-radius(0);}}}
 
         .cardTop{
             .alert{width:14px; height:28px; background: transparent url('../img/icon_art.svg') -14px -202px no-repeat; background-size:640px}
@@ -65,13 +73,13 @@
             grid-template-columns: 20px auto 100px 40px;
             grid-gap: 8px;
             h3{font-size:1em; padding-right:12px}
-            @include border-radius(6px);
+            @include border-radius(0);
             .arrow{
-                :first-child{width: 28px; height: 28px}
+                :first-child{width: 21px; height: 21px}
             }
         }
-        margin: 2px 0;
-        @include border-radius(6px);
+        margin: 0;
+        @include border-radius(0);
     }
     @media only screen and (max-width: $xsmall) {
         .cardTop{

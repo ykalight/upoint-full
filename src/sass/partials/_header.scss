@@ -39,12 +39,55 @@ header{
         }
     }
 
-    @media only screen and (max-width: $small) {padding:0}
+    @media only screen and (max-width: $small) {
+        padding:0;
+    }
 
     .Head-search{
         background-color: $blue-dark;
         &:hover{background-color: lighten($blue-dark, 6%)}
+        .react-drawer-drawer{
+            background-color: darken($blue-gray-dark, 10%);
+            height:auto;
+        }
+        .react-drawer-overlay{
+            background-color: rgba(0, 0, 0, .1);
+        }
+        .search{
+            background-color: darken($blue-gray-dark, 10%);
+            height: 68px;
+            margin: 28px auto;
+            padding: 12px 24px;
+            font-size: 1.4em;
+            outline:none;
+            width:50%;
+            border: 0;
+            border-bottom: solid 1px darken($app-medgray, 18%);
+            color: $app-lightgray;
+        }
+        form > div:before{
+            content: ''; width:30px; height:30px; padding:20px;
+            background: transparent url('../img/icon_art.svg') -594px -82px no-repeat; background-size:1000px;
+        }
+
+        @media only screen and (max-width: $medium) {
+            .search{
+                width:70%;
+            }
+        }
+
+        @media only screen and (max-width: $small) {
+            .search{
+                width:80%;
+                height: 36px;
+                margin: 24px auto;
+                padding: 12px 16px;
+                font-size: 1.3em;
+                border:0;
+            }
+        }
     }
+
     .Head-profile{
         &:hover{background-color: rgba(5, 26, 52, .4)}
     }

@@ -5,7 +5,9 @@ $link-color: $app-blue;
 $header-text-color: #fff;
 
 $card-bg-color: #fff;
-$card-border-color: #d1d2d4;
+$card-border-color: #e6e6e6;
+$card-border-color-mobile: #d1d2d4;
+$footer-hdivider: solid 1px darken($blue-gray-light, 18%);
 
 .App-banner .button{
     background-color: $app-blue;
@@ -15,7 +17,6 @@ $card-border-color: #d1d2d4;
 footer{
     color: $blue-gray-light;
     a{color: $app-lightgray}
-    .border{border-top: solid 1px darken($blue-gray-light, 18%)}
 }
 
 

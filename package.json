@@ -2,7 +2,7 @@
   "name": "upoint-full",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ykalight.github.io/",
+  "homepage": "https://ykalight.github.io/upoint-full",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "jquery": "^3.3.1",
@@ -12,6 +12,7 @@
     "react-drawer": "^1.3.4",
     "react-fade-opacity": "^2.0.0",
     "react-icons": "^2.2.7",
+    "react-responsive": "^5.0.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",

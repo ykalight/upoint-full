@@ -1,17 +1,17 @@
 [
     {
         "img": "circle-graph",
-        "title": "Work Management 1",
+        "title": "Navigation",
         "destination": "#"
     },
     {
         "img": "pigbank1",
-        "title": "Work Management 2",
+        "title": "Navigation",
         "destination": "#"
     },
     {
         "img": "people",
-        "title": "Work Management 3",
+        "title": "Navigation",
         "destination": "#"
     }   
 ]

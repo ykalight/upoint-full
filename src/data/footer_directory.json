@@ -1,0 +1,94 @@
+[
+    {
+        "title": "Savings & Retirement",
+        "links": 
+        [
+            {
+                "label": "401(k) Savings",
+                "destination": "/savings"
+            },
+            {
+                "label": "Pension",
+                "destination": "/savings"
+            },
+            {
+                "label": "Nonqualified Savings",
+                "destination": "/savings"
+            },
+            {
+                "label": "Financial Education",
+                "destination": "/savings"
+            }
+        ]
+    },
+    {
+        "title": "Health & Insurance",
+        "links": 
+        [
+            {
+                "label": "Health Plans",
+                "destination": "/health"
+            },
+            {
+                "label": "Find a Doctor",
+                "destination": "/health"
+            },
+            {
+                "label": "Life Insurance",
+                "destination": "/health"
+            },
+            {
+                "label": "Health Savings Account",
+                "destination": "/health"
+            },
+            {
+                "label": "Dependent Care Spending Account",
+                "destination": "/health"
+            }
+        ]
+    },
+    {
+        "title": "Work Management",
+        "links": 
+        [
+            {
+                "label": "Timesheet",
+                "destination": "/work"
+            },
+            {
+                "label": "Manage Performance Goals",
+                "destination": "/work"
+            },
+            {
+                "label": "Retirement Planning",
+                "destination": "/work"
+            }
+        ]
+    },
+    {
+        "title": "More",
+        "links": 
+        [
+            {
+                "label": "Life Changes",
+                "destination": "/life"
+            },
+            {
+                "label": "Your Well-Being",
+                "destination": "/wellbeing"
+            },
+            {
+                "label": "Perks & Discounts",
+                "destination": "/perks"
+            },
+            {
+                "label": "Reimbursement Account",
+                "destination": "/reimbursement"
+            },
+            {
+                "label": "Other Benefits",
+                "destination": "/other"
+            }
+        ]
+    }
+ ]

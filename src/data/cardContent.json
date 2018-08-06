@@ -1,9 +1,10 @@
 [
   {
-    "icon": "alert",
-    "title": "You may not have enough for retirement",
+    "icon": "",
+    "title": "Your 401(k) account",
     "text": "",
     "visual": "tempGraph_01",
+    "nxlink": "savings",
     "expand": 
       {
         "title": "Retirement Income Projection Modeler",
@@ -33,6 +34,7 @@
       "title": "Your health plans & deductibles",
       "text": "",
       "visual": "tempGraph_02",
+      "nxlink": "health",
       "expand":
         {
           "title": "Your Health Plans",
@@ -62,6 +64,7 @@
       "title": "Your well-being score has improved 47%",
       "text": "",
       "visual": "tempGraph_03",
+      "nxlink": "wellbeing",
       "expand":
         {
           "title": "Your Wellbeing Snapshot",
@@ -81,6 +84,7 @@
       "title": "You have 50.5 hours of unused PTO",
       "text": "",
       "visual": "tempGraph_07",
+      "nxlink": "work",
       "expand":
         {
           "title": "Your Time-Off Snapshot",

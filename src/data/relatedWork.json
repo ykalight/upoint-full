@@ -1,27 +1,27 @@
 [
     {
-        "img": "/img/tempPhoto_06.jpg",
+        "img": "/upoint-full/img/tempPhoto_06.jpg",
         "title": "Lorem ipsum extra",
         "small": "Lorem ipsum extra lorem ipsum extra.",
-        "destination": "#"
+        "destination": "/blank"
     },
     {
-        "img": "/img/tempPhoto_07.jpg",
+        "img": "/upoint-full/img/tempPhoto_07.jpg",
         "title": "Lorem ipsum extra",
         "small": "Lorem ipsum doloe amit lorem amit.",
-        "destination": "#"
+        "destination": "/blank"
     },
     {
-        "img": "/img/tempPhoto_08.jpg",
+        "img": "/upoint-full/img/tempPhoto_08.jpg",
         "title": "WLorem ipsum extra?",
         "small": "Lorem ipsum extra lorem ipsum extra.",
-        "destination": "#"
+        "destination": "/blank"
     },
     {
-        "img": "/img/tempPhoto_09.jpg",
+        "img": "/upoint-full/img/tempPhoto_09.jpg",
         "title": "Lorem extra...",
         "small": "Lorem ipsum extra lorem ipsum extra.",
-        "destination": "#"
+        "destination": "/blank"
     }     
 ]
   

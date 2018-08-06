@@ -1,3 +1,13 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes navlink {
+    0% {background-color:transparent; top:52px;}
+}
+
+/* Standard syntax */
+@keyframes navlink {
+    0% {background-color:transparent; top:52px;}
+}
+
 nav{
     li{
         font-size: .85em;
@@ -16,10 +26,31 @@ nav{
             margin:.8em; font-size: .75em;
         }
     }
+
+    .dropdown{
+        -webkit-animation-name: navlink; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: .5s; /* Safari 4.0 - 8.0 */
+        animation-name: navlink;
+        animation-duration: .5s;
+
+        width:100%;
+        background-color: rgba(0, 0, 0, .9);
+        color: #fff;
+        position: absolute;
+        left: 0; 
+        top: 54px;
+        // ul{text-align:center}
+        li{
+            display:inline-block;
+            margin:0;
+            font-size:1em;
+            a{
+                display:block;
+                padding:18px 28px;
+            }
+        }
+    }
 }
-
-
-.navSlider{z-index:999; background-color: $blue-gray-dark;}
 
 @media only screen and (max-width: $medium) {
     .slide-pane__header{visibility:hidden}
@@ -31,10 +62,12 @@ nav{
             li{
                 margin:0;
                 @include font(1em, 'Regular');
-                font-size:1em !important;
+                font-size:.9em !important;
                 display:block;
                 padding:18px; border-bottom:solid 1px rgba(255,255,255, 0.2)
             }
         }
     }
 }
+
+.ReactModalPortal .navSlider{z-index:999; background-color: $blue-gray-dark;}

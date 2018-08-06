@@ -21,8 +21,9 @@ class CardsNx extends Component {
           {cardItems}
           
           <div className="more">
-            <Button addclass="button" destination="#" label="More..." />
+            <Button addclass="button" destination="#" label="More..." onClick={this.props.onClick} />
           </div>
+
         </div>
     );
   }

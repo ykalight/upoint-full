@@ -3,23 +3,24 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 import Modal from 'react-modal';
 import data from './data/cardContent.json';
+import './stylesheets/App.css';
 
 import dataRelated from './data/relatedHome.json';
 import dataRelated_Savings from './data/relatedSavings.json';
 import dataRelated_Health from './data/relatedHealth.json';
 import dataRelated_Work from './data/relatedWork.json';
 
-// import dataRelated from './data/relatedHomeDeploy.json';
-// import dataRelatedSavings from './data/relatedSavingsDeploy.json';
-
-import Cards from './Components/Card/Cards';
+// import Cards from './Components/Card/Cards';
 import CardsNx from './Components/Card/CardsNx';
 import Related from './Components/Related/Related';
 import HeaderBar from './Components/Header/HeaderBar';
 import Banner from './Components/Header/Banner';
 import Footer from './Components/Footer/Footer';
 import DynView from './Components/Views/DynView';
-import './stylesheets/App.css';
+import ToolboxEditor from './Components/Utility/ToolboxEditor';
+
+import {Link} from 'react-router-dom'; 
+
 
 let homeContentStyle = {position: 'absolute', margin: 'auto', width: '100%', transform: 'translate(0%, -3.4%)'},
 contentStyle = {marginTop: '28px', width: '90%'};
@@ -34,8 +35,11 @@ class App extends Component {
       relateddata: [],
       relateddata_Savings: [],
       relateddata_Health: [],
-      relateddata_Work: []
-    }
+      relateddata_Work: [],
+      toolboxedit_show: false
+    };
+    this.showToolEdit = this.showToolEdit.bind(this);
+    this.hideToolEdit = this.hideToolEdit.bind(this);
   }
 
 
@@ -57,38 +61,43 @@ class App extends Component {
     Modal.setAppElement(this.el);
   }
 
+  showToolEdit(e) {
+    e.preventDefault();
+    this.setState({toolboxedit_show: true});
+  }
+
+  hideToolEdit() {
+    this.setState({toolboxedit_show: false});
+   }
+
   render() {
     return (
       <Router onUpdate={() => window.scrollTo(0, 0)}>
         <div className="App" id="wrapper" ref={ref => this.el = ref}>
 
           <Route path='/' component={HeaderBar} />
+
+          <Route path='/upoint-full' render={()=> {return(
+            <div style={{padding: '140px 0', textAlign:'center'}}>
+              <Link className="button" to="/dashboard" style={{fontSize:'2em', fontWeight:'bold', backgroundColor:'#2bafd7'}}>Click to start demo</Link>
+            </div>
+          )}} />
           
           <Route exact strict path='/dashboard' render={()=> {return(
             <main>
               <Banner />
               <div className="content" style={homeContentStyle}>
-                <Cards cardsdata={this.state.cardsdata} />
+                <CardsNx cardsdata={this.state.cardsdata} onClick={this.showToolEdit} />
                 <Related relateddata={this.state.relateddata} />
                 <Footer />
               </div>
-            </main>
-          )}} />
-
-          <Route exact strict path='/dashboardnx' render={()=> {return(
-            <main>
-              <Banner />
-              <div className="content" style={homeContentStyle}>
-                <CardsNx cardsdata={this.state.cardsdata} />
-                <Related relateddata={this.state.relateddata} />
-                <Footer />
-              </div>
+              {this.state.toolboxedit_show && (<ToolboxEditor show={this.state.toolboxedit_show} onClickClose={this.hideToolEdit} />)}
             </main>
           )}} />
 
           <Route exact strict path='/savings' render={()=> {return(
             <main>
-              <DynView divstyle={contentStyle} pgtitle="Savings & Retirement" />
+              <DynView divstyle={contentStyle} pgtitle="Savings & Retirement" temptext="Savings & Retirement content" />
               <Related relateddata={this.state.relateddata_Savings} />
               <Footer />
             </main>
@@ -96,7 +105,7 @@ class App extends Component {
 
           <Route exact strict path='/health' render={()=> {return(
             <main>
-              <DynView divstyle={contentStyle} pgtitle="Health & Insurance" />
+              <DynView divstyle={contentStyle} pgtitle="Health & Insurance" temptext="Health & Insurance content" />
               <Related relateddata={this.state.relateddata_Health} />
               <Footer />
             </main>
@@ -104,8 +113,67 @@ class App extends Component {
 
           <Route exact strict path='/work' render={()=> {return(
             <main>
-              <DynView divstyle={contentStyle} pgtitle="Work Management" />
+              <DynView divstyle={contentStyle} pgtitle="Work Management" temptext="Work Management content" />
               <Related relateddata={this.state.relateddata_Work} />
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/life' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Life Changes" temptext="Life Changes content" />
+              <Related relateddata={this.state.relateddata_Work} />
+              {/* TODO: Change related data call  */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/wellbeing' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Your Well-Being" temptext="Well-Being content" />
+              <Related relateddata={this.state.relateddata_Work} />
+              {/* TODO: Change related data call  */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/perks' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Perks & Discounts" temptext="Perks & Diiscounts content" />
+              {/* <Related relateddata={this.state.relateddata_Work} /> */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/reimbursement' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Reimbursement Accounts" temptext="Reimbursement Account content" />
+              {/* <Related relateddata={this.state.relateddata_Work} /> */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/other' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Other Benefits" temptext="Other Benefits content" />
+              <Related relateddata={this.state.relateddata_Work} />
+              {/* TODO: Change related data call  */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/savings/boost' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Boost Your Retirement Wealth" temptext="Boost Your Retirement Wealth content" />
+              {/* <Related relateddata={this.state.relateddata_Work} /> */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/searchresults' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Search Results" temptext="Lorem ipsum..." />
+              {/* <Related relateddata={this.state.relateddata_Work} /> */}
               <Footer />
             </main>
           )}} />

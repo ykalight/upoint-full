@@ -6,7 +6,7 @@ class Button extends Component {
   render() {
 
     return (
-        <Link className={this.props.addclass} to={this.props.destination}>{this.props.label}</Link>
+        <Link className={this.props.addclass} to={this.props.destination} onClick={this.props.onClick}>{this.props.label}</Link>
     );
   }
 }

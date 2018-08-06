@@ -8,7 +8,7 @@ class Social extends Component {
     return (
         <div className="social">
         Follow us
-        <Link to={"/dashboardnx"}><img src={tempSocial} alt="Social" style={{width: '120px', marginTop: '8px'}} /></Link>
+        <Link to={"#"}><img src={tempSocial} alt="Social" style={{width: '120px', marginTop: '8px'}} /></Link>
         </div>
     );
   }

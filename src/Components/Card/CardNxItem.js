@@ -11,6 +11,11 @@ class CardNxItem extends Component {
         this.state = { 
             active: 'Card'
         };
+        this.scrollToTop=this.scrollToTop.bind(this);
+    }
+
+    scrollToTop() {
+        window.scrollTo(0,0);
     }
 
     render() {
@@ -26,7 +31,7 @@ class CardNxItem extends Component {
                     <div id={this.props.card.visual !== '' ?  this.props.card.visual : ''}></div>
                 </div>
                 <div className="arrow">
-                     <Link to={"#"}>More {arrowDirection}</Link>
+                     <Link to={this.props.card.nxlink} onClick={this.scrollToTop}>{arrowDirection}</Link>
                 </div>
             </div>
 

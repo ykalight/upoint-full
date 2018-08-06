@@ -36,3 +36,16 @@
 
     }
 }
+
+// temp dynpage content
+.tempCards{
+    min-height: 240px;
+    padding:38px;
+
+    margin: 8px 0;
+    background-color: $card-bg-color;
+    border: solid 1px $card-border-color;
+    @include border-radius(14px);
+
+    p{font-size:1.2em}
+}
