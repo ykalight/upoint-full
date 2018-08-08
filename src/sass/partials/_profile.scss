@@ -2,20 +2,23 @@
     .profile-dropdown{
         position:absolute;
         right:0;
-        background-color: rgba(5, 26, 52, .9);
+        background-color: $header-profile-menu-bg-color;
         min-width:300px;
         padding:0 8px;
         li{
             a{
                 font-size:.9em;
-                color:#fff;
+                color: $header-profile-menu-text-color;
                 display:block;
                 text-align: left;
                 padding:18px 24px 18px 8px;
                 border-bottom: solid 1px transparent;
-                &:hover{color:$link-color; border-bottom:solid 1px rgba(255, 255, 255, 0.3)}
+                &:hover{
+                    color: $header-profile-menu-text-hover-color; 
+                    border-bottom:solid 1px $header-profile-menu-hover-border-bottom
+                }
                 &.roleview{
-                    border-top:solid 1px rgba(255, 255, 255, 0.3);
+                    border-top:solid 1px $header-profile-role-border-top;
                     &:hover{border-bottom:solid 1px transparent}
                 }
             }

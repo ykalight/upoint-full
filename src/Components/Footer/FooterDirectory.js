@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import uuid from 'uuid';
 import FooterDirItems from './FooterDirItems';
-import footer_directory from '../../data/footer_directory';
+import footer_directory from '../../data/nav_directory';
 
 class FooterDirectory extends Component {
     constructor(props) {

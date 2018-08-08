@@ -9,6 +9,9 @@ let iconStyle={
 }
 class ProfileMenu extends Component {
 
+    scrollToTop() {
+        window.scrollTo(0,0);
+    }
 
   render() {
 
@@ -19,7 +22,7 @@ class ProfileMenu extends Component {
                 <li><Link to='#'><MdNotifications style={iconStyle} />Manage Communications</Link></li>
                 <li><Link to='#'><MdPeopleOutline style={iconStyle} />Beneficiaries</Link></li>
                 <li><Link to='#'><MdAccountBalance style={iconStyle} />Financial Institutions</Link></li>
-                <li><Link to='#' className="roleview"><MdDashboard style={iconStyle} />Manager View</Link></li>
+                <li><Link to='/manager' className="roleview"><MdDashboard style={iconStyle} onClick={this.scrollToTop} />Manager View</Link></li>
             </ul>
         </div>
     );

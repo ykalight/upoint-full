@@ -8,9 +8,8 @@ body {
     #root {font-family: $font-family}
 }
 img {max-width: 100%; display: block}
-a{transition: 0.4s; text-decoration:none; color:$link-color; outline:none; &:hover{color: lighten($link-color, 20%)}}
+a{transition: 0.4s; text-decoration:none; color:$link-color; outline:none; &:hover{color: $link-hover}}
 
-main{}
 .container{width:99%; max-width: $content-width; margin:auto; padding:0;
     @media only screen and (max-width: $small) {width:100%}
 }

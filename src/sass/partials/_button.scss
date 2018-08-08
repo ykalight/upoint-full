@@ -1,30 +1,32 @@
 .button{
-    margin:22px 0;
-    font-size:1.2em;
-    color: #fff;
-    @include border-radius(24px);
-    padding:10px 3em;
-    display:inline-block;
+    font-size: $button-text-size;
+    color: $button-text-color;
+    background-color: $button-bg-color;
+    &:hover{color: $button-text-hover-color; background-color: $button-bg-hover-color}
+    @include border-radius( $button-border-radius );
+    display:inline-block; margin:22px 0; padding:10px 3em;
 
-    .more &{
-        color: $app-blue;
-        border: solid 1px $app-blue;
-        font-size:1em;
+    &.bt-outline{
+        color: $outline-button-text-color;
+        background-color: $outline-button-bg-color;
+        border: solid 1px $outline-button-outline-color;
         padding:8px 2em;
         margin:42px 0;
         &:hover{
-            border-color: darken($app-blue, 20%);
-            color: darken($app-blue, 20%);
+            background-color: $outline-button-bg-hover-color;
+            border-color: $outline-button-outline-hover-color;
+            color: $outline-button-text-hover-color;
         }
     }
 
     @media only screen and (max-width: $medium) {
         font-size:1em;
     }
+
     @media only screen and (max-width: $small) {
         font-size:.94em;
         padding:8px 2.6em;
-        .more &{
+        &.bt-outline{
             font-size:.9em;
             padding:4px 2em;
             margin:18px 0;

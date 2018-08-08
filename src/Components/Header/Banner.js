@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import bannerimg from '../../img/banner1.jpg';
-import data from '../../data/bannerHome.json';
+import data from '../../data/banner_home.json';
 import Button from '../Common/Button';
 
-// let bannerStyle = {
-//   backgroundSize:'cover',
-//   height:'460px',
-//   backgroundImage: `url(${bannerimg})`,
-//   backgroundRepeat: "no-repeat"
-// };
-
 let contentStyle = {position: 'absolute'},
-    imgStyle = {width: '100%', objectFit: 'cover'}
+imgStyle = {width: '100%', objectFit: 'cover'}
 
 class Banner extends Component {
 

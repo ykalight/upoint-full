@@ -2,15 +2,15 @@ import React, { Component } from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'; 
 import Route from 'react-router-dom/Route';
 import Modal from 'react-modal';
-import data from './data/cardContent.json';
+import data from './data/card_home.json';
 import './stylesheets/App.css';
 
-import dataRelated from './data/relatedHome.json';
-import dataRelated_Savings from './data/relatedSavings.json';
-import dataRelated_Health from './data/relatedHealth.json';
-import dataRelated_Work from './data/relatedWork.json';
+import dataRelated from './data/related_home.json';
+import dataRelated_Savings from './data/related_savings.json';
+import dataRelated_Health from './data/related_health.json';
+import dataRelated_Work from './data/related_work.json';
 
-// import Cards from './Components/Card/Cards';
+import Cards from './Components/Card/Cards';
 import CardsNx from './Components/Card/CardsNx';
 import Related from './Components/Related/Related';
 import HeaderBar from './Components/Header/HeaderBar';
@@ -95,10 +95,29 @@ class App extends Component {
             </main>
           )}} />
 
+          <Route exact strict path='/dashboard_xp' render={()=> {return(
+            <main>
+              <Banner />
+              <div className="content" style={homeContentStyle}>
+                <Cards cardsdata={this.state.cardsdata} onClick={this.showToolEdit} />
+                <Related relateddata={this.state.relateddata} />
+                <Footer />
+              </div>
+              {this.state.toolboxedit_show && (<ToolboxEditor show={this.state.toolboxedit_show} onClickClose={this.hideToolEdit} />)}
+            </main>
+          )}} />
+
           <Route exact strict path='/savings' render={()=> {return(
             <main>
               <DynView divstyle={contentStyle} pgtitle="Savings & Retirement" temptext="Savings & Retirement content" />
               <Related relateddata={this.state.relateddata_Savings} />
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/savings/roth' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Advantages of Roth Contributions" temptext="Advantages of Roth Contributions content" />
               <Footer />
             </main>
           )}} />
@@ -170,9 +189,33 @@ class App extends Component {
             </main>
           )}} />
 
+          <Route exact strict path='/savings/more' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Get more from your 401(k) account" temptext="Tips and advice to boost your retirement savings.... content goes here." />
+              {/* <Related relateddata={this.state.relateddata_Work} /> */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/work/pto' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="What to do with unused PTO?" temptext="Explore more exciting ways to use your PTO.... content goes here." />
+              {/* <Related relateddata={this.state.relateddata_Work} /> */}
+              <Footer />
+            </main>
+          )}} />
+
           <Route exact strict path='/searchresults' render={()=> {return(
             <main>
               <DynView divstyle={contentStyle} pgtitle="Search Results" temptext="Lorem ipsum..." />
+              {/* <Related relateddata={this.state.relateddata_Work} /> */}
+              <Footer />
+            </main>
+          )}} />
+
+          <Route exact strict path='/manager' render={()=> {return(
+            <main>
+              <DynView divstyle={contentStyle} pgtitle="Manager View" temptext="Lorem ipsum..." />
               {/* <Related relateddata={this.state.relateddata_Work} /> */}
               <Footer />
             </main>

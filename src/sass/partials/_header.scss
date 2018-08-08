@@ -1,10 +1,9 @@
-
 header{
     transition:0.2s;
     &.active{box-shadow: 0 -16px 18px 12px #000}
 
     color: $header-text-color;
-    background-color: rgba(5, 26, 52, .8);
+    background-color: $header-bg-color;
     text-align: center;
     padding: 0 0 0 12px;
 
@@ -18,7 +17,9 @@ header{
         
         .Head-logo img{
             transition:0.4s;
-            height:26px; max-width:240px; margin:0 4px
+            height: $header-logo-img-height; 
+            max-width: $header-logo-max-width; 
+            margin: $header-logo-margin;
         }
 
         @media only screen and (max-width: $medium) {
@@ -31,7 +32,7 @@ header{
             #mnav{
                 display:block;
                 padding-top: 8px;
-                border-right: solid 1px rgba(255, 255, 255, .2);
+                border-right: $mobile-nav-bt-divider;
                 margin-right: 12px;
             }
             .Head-profile{display:none}
@@ -44,17 +45,18 @@ header{
     }
 
     .Head-search{
-        background-color: $blue-dark;
-        &:hover{background-color: lighten($blue-dark, 6%)}
+        background-color: $header-search-bt-color;
+        &:hover{background-color: $header-search-bt-hover-color}
+        
         .react-drawer-drawer{
-            background-color: darken($blue-gray-dark, 10%);
+            background-color: $header-searchbar-bg-color;
             height:auto;
         }
         .react-drawer-overlay{
             background-color: rgba(0, 0, 0, .1);
         }
         .search{
-            background-color: darken($blue-gray-dark, 10%);
+            background-color: $header-search-input-bg-color;
             height: 68px;
             margin: 28px auto;
             padding: 12px 24px;
@@ -62,8 +64,8 @@ header{
             outline:none;
             width:50%;
             border: 0;
-            border-bottom: solid 1px darken($app-medgray, 18%);
-            color: $app-lightgray;
+            border-bottom: $header-search-input-bottom-border;
+            color: $header-search-input-text-color;
         }
         form > div:before{
             content: ''; width:30px; height:30px; padding:20px;
@@ -89,9 +91,9 @@ header{
     }
 
     .Head-profile{
-        &:hover{background-color: rgba(5, 26, 52, .4)}
+        &:hover{background-color: $header-profile-bt-hover-color}
     }
     .Head-message{
-        &:hover{background-color: rgba(5, 26, 52, .4)}
+        &:hover{background-color: $header-message-bt-hover-color}
     }
 }

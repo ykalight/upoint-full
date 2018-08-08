@@ -32,6 +32,11 @@ class Related extends Component {
       );
   }
 
+  scrollToTop() {
+      window.scrollTo(0,0);
+  }
+
+
   render() {
 
     let relatedItems;
@@ -39,7 +44,7 @@ class Related extends Component {
     if(this.props.relateddata){
       relatedItems = this.props.relateddata.slice(0, `${this.state.show}`).map(related => {
         return (
-          <RelatedItem key={uuid.v4()} related={related} />
+          <RelatedItem key={uuid.v4()} related={related} onClick={this.scrollToTop} />
         )
       });
     }
@@ -56,7 +61,7 @@ class Related extends Component {
 
             <div className="more">
               <span onClick={this.state.showall ? this._showDefault : this._showAll}>
-                <Button addclass="button" destination="#" label={this.state.btlabel} />
+                <Button addclass="button bt-outline" destination="#" label={this.state.btlabel} />
               </span>
             </div>
 

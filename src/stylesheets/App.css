@@ -423,27 +423,6 @@ table {
   border-spacing: 0;
 }
 
-.App-banner .button {
-  background-color: #2bafd7;
-}
-.App-banner .button:hover {
-  background-color: #196a83;
-}
-
-footer {
-  color: #8294a9;
-}
-footer a {
-  color: #ededed;
-}
-
-.Card .cardTop.nonexpand .arrow a {
-  font-size: 0.9em;
-}
-.Card .cardTop.nonexpand .arrow :first-child {
-  color: #2bafd7;
-}
-
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -668,6 +647,26 @@ nav li {
 nav li a {
   color: #fff;
 }
+nav li div {
+  -webkit-animation-name: navlink;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 0.5s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: navlink;
+  animation-duration: 0.5s;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  top: 54px;
+}
+nav li div li {
+  display: inline-block;
+  margin: 0;
+  font-size: 1em;
+}
+nav li div li a {
+  display: block;
+  padding: 18px 28px;
+}
 @media only screen and (max-width: 1080px) {
   nav li {
     margin: 1em;
@@ -679,29 +678,6 @@ nav li a {
     margin: 0.8em;
     font-size: 0.75em;
   }
-}
-nav .dropdown {
-  -webkit-animation-name: navlink;
-  /* Safari 4.0 - 8.0 */
-  -webkit-animation-duration: 0.5s;
-  /* Safari 4.0 - 8.0 */
-  animation-name: navlink;
-  animation-duration: 0.5s;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  position: absolute;
-  left: 0;
-  top: 54px;
-}
-nav .dropdown li {
-  display: inline-block;
-  margin: 0;
-  font-size: 1em;
-}
-nav .dropdown li a {
-  display: block;
-  padding: 18px 28px;
 }
 
 @media only screen and (max-width: 920px) {
@@ -736,14 +712,17 @@ nav .dropdown li a {
 .App-banner {
   background-color: #fff;
 }
+.App-banner .button {
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #2bafd7;
+}
+.App-banner .button:hover {
+  background-color: #196a83;
+  color: #2bafd7;
+}
 .App-banner img {
   height: 460px;
-}
-.App-banner .banner-content {
-  top: 100px;
-  width: 50%;
-  min-width: 420px;
-  padding: 18px 58px;
 }
 .App-banner h1 {
   font-size: 3em;
@@ -752,6 +731,12 @@ nav .dropdown li a {
 .App-banner p {
   font-size: 1.3em;
   margin: 8px 0;
+}
+.App-banner .banner-content {
+  top: 100px;
+  width: 50%;
+  min-width: 420px;
+  padding: 18px 58px;
 }
 @media only screen and (max-width: 1080px) {
   .App-banner h1 {
@@ -766,34 +751,40 @@ nav .dropdown li a {
   .App-banner img {
     height: 380px;
   }
-  .App-banner .banner-content {
-    top: 70px;
-    width: 60%;
-  }
   .App-banner h1 {
     font-size: 2.2em;
   }
   .App-banner p {
     font-size: 0.9em;
   }
+  .App-banner .banner-content {
+    top: 70px;
+    width: 60%;
+  }
+  .App-banner .button {
+    font-size: 1em;
+  }
 }
 @media only screen and (max-width: 740px) {
-  .App-banner h1, .App-banner p {
-    width: 64%;
-  }
   .App-banner img {
     height: 320px;
+  }
+  .App-banner h1 {
+    font-size: 1.8em;
+  }
+  .App-banner h1, .App-banner p {
+    width: 64%;
   }
   .App-banner .banner-content {
     transition: 0.4s;
     top: 0;
-    padding: 82px 18px 28px 18px;
-    min-width: auto;
     width: 100%;
     height: 280px;
+    min-width: auto;
+    padding: 82px 18px 28px 18px;
   }
-  .App-banner h1 {
-    font-size: 1.8em;
+  .App-banner .button {
+    font-size: 0.94em;
   }
 }
 
@@ -809,7 +800,6 @@ nav .dropdown li a {
   /* stops bg color from leaking outside the border: */
 }
 .Card .cardTop {
-  cursor: pointer;
   display: grid;
   grid-template-columns: 30px 2fr 2fr 80px;
   grid-gap: 18px;
@@ -822,6 +812,11 @@ nav .dropdown li a {
   border-radius: 14px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
+}
+.Card .cardTop h3 {
+  font-size: 1.3em;
+  color: #555555;
+  padding-right: 52px;
 }
 .Card .cardTop .alert {
   width: 20px;
@@ -846,18 +841,20 @@ nav .dropdown li a {
   -webkit-box-shadow: 0 -1px 8px -4px #000;
   box-shadow: 0 -1px 8px -4px #000;
 }
-.Card h3 {
-  font-size: 1.3em;
-  padding-right: 52px;
+.Card .cardTop.nonexpand .arrow span:before {
+  font-size: 0.9em;
+}
+.Card .cardTop.nonexpand .arrow :first-child {
+  color: #2bafd7;
 }
 .Card.active .cardTop:hover {
   /* usage @import border-radius-custom(12px, 0, 10px, 0) */
-  -webkit-border-top-left-radius: 18px;
-  -webkit-border-top-right-radius: 18px;
+  -webkit-border-top-left-radius: 14px;
+  -webkit-border-top-right-radius: 14px;
   -webkit-border-bottom-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
-  border-top-left-radius: 18px;
-  border-top-right-radius: 18px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
   background-clip: padding-box;
@@ -946,25 +943,31 @@ nav .dropdown li a {
 }
 
 .button {
-  margin: 22px 0;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fff;
+  background-color: #2bafd7;
   /* usage @import border-radius(12px) */
   -webkit-border-radius: 24px;
   border-radius: 24px;
   background-clip: padding-box;
   /* stops bg color from leaking outside the border: */
-  padding: 10px 3em;
   display: inline-block;
+  margin: 22px 0;
+  padding: 10px 3em;
 }
-.more .button {
+.button:hover {
   color: #2bafd7;
+  background-color: #196a83;
+}
+.button.bt-outline {
+  color: #2bafd7;
+  background-color: transparent;
   border: solid 1px #2bafd7;
-  font-size: 1em;
   padding: 8px 2em;
   margin: 42px 0;
 }
-.more .button:hover {
+.button.bt-outline:hover {
+  background-color: transparent;
   border-color: #196a83;
   color: #196a83;
 }
@@ -978,7 +981,7 @@ nav .dropdown li a {
     font-size: 0.94em;
     padding: 8px 2.6em;
   }
-  .more .button {
+  .button.bt-outline {
     font-size: 0.9em;
     padding: 4px 2em;
     margin: 18px 0;
@@ -1295,10 +1298,55 @@ nav .dropdown li a {
   border-bottom: solid 1px transparent;
 }
 
+.toolbox-editor-wrapper .react-drawer-drawer {
+  background-color: #fff;
+  height: 420px;
+}
+.toolbox-editor-wrapper .toolbox-editor > div svg:hover {
+  transition: 0.4s;
+  color: #c00;
+}
+.toolbox-editor-wrapper .toolbox-editor .scroll {
+  display: flex;
+  flex-wrap: wrap;
+  height: 340px;
+  overflow: scroll;
+  padding: 28px;
+}
+.toolbox-editor-wrapper .toolItem {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  margin: 28px;
+  padding: 18px;
+}
+.toolbox-editor-wrapper .toolItem .pin {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+}
+.toolbox-editor-wrapper .toolItem .pin svg {
+  transition: 0.4s;
+}
+.toolbox-editor-wrapper .toolItem .pin svg:hover {
+  background-color: whitesmoke;
+  /* usage @import border-radius(12px) */
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+}
+
 footer {
   background-color: #2f4258;
+  color: #8294a9;
   padding: 36px 0;
   font-size: 0.8em;
+}
+footer a {
+  color: #ededed;
 }
 footer > div {
   display: grid;
@@ -1425,7 +1473,6 @@ footer > div .fhr {
     border-bottom: solid 1px #54667b;
   }
   footer > div .footer-directory label {
-    color: #ededed;
     margin-bottom: 0;
     padding: 14px 0;
   }

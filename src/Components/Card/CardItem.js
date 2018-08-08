@@ -6,7 +6,10 @@ import ActionItem from '../Content/ActionItem';
 import uuid from 'uuid';
 import FadeIn from 'react-fade-in';
 
-let arrowDirection = <MdKeyboardArrowDown />;
+let arrowDirection = <MdKeyboardArrowDown />,
+cardtopStyle = {
+    cursor: 'pointer'
+}
 
 class CardItem extends Component {
     constructor(props) {
@@ -47,7 +50,7 @@ class CardItem extends Component {
         return (
         <FadeIn>
         <div className={this.state.active} > 
-            <div className="cardTop" onClick={this._toggleDiv}>
+            <div className="cardTop" onClick={this._toggleDiv} style={cardtopStyle}>
                 <div className="icon">
                     <div className={this.props.card.icon !== '' ?  this.props.card.icon : ''}></div>
                 </div>

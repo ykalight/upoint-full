@@ -1,5 +1,18 @@
 import React, { Component } from 'react';
 import ReactDrawer from 'react-drawer';
+import ToolboxItem from './ToolboxItem';
+import toolbox_item_data from '../../data/toolbox_item';
+import uuid from 'uuid';
+import {MdClose} from 'react-icons/lib/md';
+
+let xStyle = {
+  position:'absolute', 
+  right:'22px', 
+  top:'22px', 
+  width:'42px', 
+  height:'42px', 
+  cursor:'pointer'
+}
 
 class ToolboxEditor extends Component {
 
@@ -8,7 +21,8 @@ class ToolboxEditor extends Component {
         this.state = {
             open: false,
             position: 'bottom',
-            noOverlay: false
+            noOverlay: false,
+            toolItem_data: []
         };
         this.toggleDrawer = this.toggleDrawer.bind(this);
         this.closeDrawer = this.closeDrawer.bind(this);
@@ -17,7 +31,17 @@ class ToolboxEditor extends Component {
         this.setNoOverlay = this.setNoOverlay.bind(this);
     }
 
-    setPosition(e) {
+      getData(){
+        this.setState({
+          toolItem_data: toolbox_item_data
+        })
+      }
+  
+      componentWillMount(){
+          this.getData();
+      }
+
+      setPosition(e) {
         this.setState({position: e.target.value});
       }
       setNoOverlay(e) {
@@ -41,24 +65,30 @@ class ToolboxEditor extends Component {
 
   render() {
 
+    let toolItems;
+    toolItems = this.state.toolItem_data.map(tool => {
+        return (
+            <ToolboxItem key={uuid.v4()} tool={tool} />
+        )
+    });
+
     return (
-        <div>
-            {/* {this.state.open && ( */}
-                <ReactDrawer
-                    open={this.state.open}
-                    position={this.state.position}
-                    onClose={this.onDrawerClose}
-                    noOverlay={this.state.noOverlay}>
-                    <i onClick={this.closeDrawer} className="icono-cross"></i>
-                    
-                    <div className="container">
-                        <div className="toolbox-editor">
-                          xxx
-                        </div>
-                    </div>
-    
-              </ReactDrawer>
-            {/* )} */}
+        <div className="toolbox-editor-wrapper">
+          <ReactDrawer
+              open={this.state.open}
+              position={this.state.position}
+              onClose={this.onDrawerClose}
+              noOverlay={this.state.noOverlay}>
+              <i onClick={this.closeDrawer} className="icono-cross"></i>
+              
+              <div className="container">
+                  <div className="toolbox-editor">
+                    <div><MdClose onClick={this.toggleDrawer} style={xStyle} /></div>
+                    <div className="scroll">{toolItems}</div>
+                  </div>
+              </div>
+
+        </ReactDrawer>
         </div>
         
     );

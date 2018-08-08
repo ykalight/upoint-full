@@ -6,10 +6,11 @@ let RelatedItem = function statelessFunctionComponentClass(props) {
   let title = props.related.title,
     small = props.related.small,
     img = props.related.img,
-    destination = props.related.destination;
+    destination = props.related.destination,
+    onclick = props.onClick;
 
   return (
-        <Link className="related" to={destination}>
+        <Link onClick={onclick} className="related" to={destination}>
             <img src={img} alt="img" />
             <h4>{title}</h4>
             <p>{small} <MdKeyboardArrowRight style={{width: '17px', height: '17px'}} /></p>

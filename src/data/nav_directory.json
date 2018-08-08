@@ -1,6 +1,7 @@
 [
     {
         "title": "Savings & Retirement",
+        "destination": "/savings",
         "links": 
         [
             {
@@ -23,6 +24,7 @@
     },
     {
         "title": "Health & Insurance",
+        "destination": "/health",
         "links": 
         [
             {
@@ -49,6 +51,7 @@
     },
     {
         "title": "Work Management",
+        "destination": "/work",
         "links": 
         [
             {
@@ -67,6 +70,7 @@
     },
     {
         "title": "More",
+        "destination": "#",
         "links": 
         [
             {

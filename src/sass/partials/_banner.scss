@@ -1,13 +1,18 @@
 
 .App-banner{
-    img{height: 460px}
-
     background-color: #fff;
+    
+    .button{
+        font-size: $banner-button-text-size;
+        color: $banner-button-text-color;
+        background-color: $banner-button-bg-color;
+        &:hover{background-color: $banner-button-hover-color; color: $banner-button-text-hover-color}
+    }
 
-    .banner-content{top: 100px; width: 50%; min-width: 420px; padding: 18px 58px}
-
+    img{height: 460px}
     h1{font-size: 3em; line-height:1em}
     p{font-size: 1.3em; margin:8px 0}
+    .banner-content{top: 100px; width: 50%; min-width: 420px; padding: 18px 58px}
 
     @media only screen and (max-width: $large) {
         h1{font-size: 2.6em}
@@ -15,21 +20,16 @@
     }
     @media only screen and (max-width: $medium) {
         img{height: 380px}
-        .banner-content{top: 70px; width: 60%}
         h1{font-size: 2.2em}
         p{font-size: .9em}
+        .banner-content{top: 70px; width: 60%}
+        .button{font-size: 1em}
     }
     @media only screen and (max-width: $small) {
-        h1, p{width:64%}
         img{height: 320px}
-        .banner-content{
-            transition: 0.4s;
-            top: 0; padding: 82px 18px 28px 18px;
-            min-width: auto;
-            width:100%; height:280px;
-            // background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
-            // h1, p{color: #fff}
-        }
         h1{font-size: 1.8em}
+        h1, p{width:64%}
+        .banner-content{transition: 0.4s; top: 0; width:100%; height:280px; min-width: auto; padding: 82px 18px 28px 18px}
+        .button{font-size: .94em}
     }
 }

@@ -1,64 +1,60 @@
 .Card{
+    transition: 0.4s;
+    margin: 8px 0;
+    background-color: $card-bg-color;
+    border: solid 1px $card-border-color;
+    @include border-radius($card-border-radius);
+
     .cardTop{
-        cursor: pointer;
         display: grid;
         grid-template-columns: 30px 2fr 2fr 80px;
         grid-gap: 18px;
         align-items: center;
         min-height: 130px;
         padding:12px;
+        transition: 0.4s;
+        @include border-radius($card-border-radius);
 
+        h3{font-size: $card-title-text-size; color: $card-title-text-color; padding-right:52px}
         .alert{width:20px; height:40px; background: transparent url('../img/icon_art.svg') -19px -278px no-repeat; background-size:900px}
         .arrow{
             justify-self: center;
-            :first-child{width: 24px; height: 24px; color: darken($app-gray, 10%)}
-            :before{
-                content: 'More ';
-            }
+            :first-child{width: 24px; height: 24px; color: $card-arrow-color}
+            :before{ content: 'More '}
         }
-
-        transition: 0.4s;
-        @include border-radius(14px);
-        &:hover{background-color: lighten($app-lightgray, 5%); @include boxshadow(0, -1px, 8px, -4px, #000);}
+        
+        &:hover{background-color: $card-bg-hover-color; @include boxshadow(0, -1px, 8px, -4px, #000)}
+        
+        &.nonexpand{
+            .arrow{
+                span:before{font-size:.9em}
+                :first-child{color: $nonexpand-card-link-color}
+            }   
+        }
     }
 
-    transition: 0.4s;
-    margin: 8px 0;
-    background-color: $card-bg-color;
-    border: solid 1px $card-border-color;
-    @include border-radius(14px);
-
-    h3{font-size:1.3em; padding-right:52px}
-
     &.active{
-        // @include boxshadow(0, 0, 10px, -4px, #000);
         .cardTop{
-            &:hover{@include border-radius-custom(18px, 18px, 0, 0);}
+            &:hover{@include border-radius-custom( $card-border-radius, $card-border-radius, 0, 0);}
         }
     }
 
     .panel {        
-        display:none;
-        overflow: hidden;
+        display:none; overflow: hidden; padding:18px;
         p{font-size: 2em}
-        
-        padding:18px;
         h5{
-            @include font(.8, 'Bold'); color: darken($app-medgray, 10%);
+            @include font(.8, 'Bold'); color: $card-panel-text-color;
             padding:12px 0 6px 0; text-transform: uppercase;
-            border-bottom:solid 1px $app-gray;
+            border-bottom:solid 1px $card-panel-divider-color;
         }
     }
 
     @media only screen and (max-width: $medium) {
-        .cardTop{
-            padding:18px 8px;
+        .cardTop{padding:18px 8px;
             h3{font-size:1.1em; padding-right:46px}
             .arrow{
                 a span{display:none}
-                :before{
-                    content: '';
-                }
+                :before{content: ''}
             }
         }
     }

@@ -4,9 +4,9 @@ import Route from 'react-router-dom/Route';
 import ReactDrawer from 'react-drawer';
 import Subnav from '../Subnav/Subnav';
 import 'react-drawer/lib/react-drawer.css';
-import subnav_Savings from '../../data/subnavSavings.json';
-import subnav_Health from '../../data/subnavHealth.json';
-import subnav_Work from '../../data/subnavWork.json';
+import subnav_Savings from '../../data/subnav_savings.json';
+import subnav_Health from '../../data/subnav_health.json';
+import subnav_Work from '../../data/subnav_work.json';
 
 class DynView extends Component {
   constructor(props) {
