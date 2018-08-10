@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.dcfabb30.css",
-  "main.css.map": "static/css/main.dcfabb30.css.map",
-  "main.js": "static/js/main.906a94ba.js",
-  "main.js.map": "static/js/main.906a94ba.js.map",
+  "main.css": "static/css/main.65c9960a.css",
+  "main.css.map": "static/css/main.65c9960a.css.map",
+  "main.js": "static/js/main.67f6fe6a.js",
+  "main.js.map": "static/js/main.67f6fe6a.js.map",
   "static/media/FSThriveElliotWeb-Bold.eot": "static/media/FSThriveElliotWeb-Bold.f16f7ac8.eot",
   "static/media/FSThriveElliotWeb-Bold.svg": "static/media/FSThriveElliotWeb-Bold.8686f2b6.svg",
   "static/media/FSThriveElliotWeb-Bold.ttf": "static/media/FSThriveElliotWeb-Bold.84bb92fd.ttf",
@@ -23,6 +23,10 @@
   "static/media/FSThriveElliotWeb-Regular.woff": "static/media/FSThriveElliotWeb-Regular.6dd1eaf1.woff",
   "static/media/FSThriveElliotWeb-Regular.woff2": "static/media/FSThriveElliotWeb-Regular.cb7d6312.woff2",
   "static/media/banner1.jpg": "static/media/banner1.1de75a3e.jpg",
+  "static/media/icomoon.eot": "static/media/icomoon.4b968fa4.eot",
+  "static/media/icomoon.svg": "static/media/icomoon.1f155db2.svg",
+  "static/media/icomoon.ttf": "static/media/icomoon.3eb368b2.ttf",
+  "static/media/icomoon.woff": "static/media/icomoon.93b83161.woff",
   "static/media/icon_art.svg": "static/media/icon_art.6724db06.svg",
   "static/media/logoUpoint.svg": "static/media/logoUpoint.7e3ebff8.svg",
   "static/media/logo_client.svg": "static/media/logo_client.f03ac5d5.svg",
@@ -38,5 +42,9 @@
   "static/media/tempGraph_14.svg": "static/media/tempGraph_14.f926e639.svg",
   "static/media/tempGraph_15.svg": "static/media/tempGraph_15.7cf1e08a.svg",
   "static/media/tempGraph_16.svg": "static/media/tempGraph_16.a4d66e27.svg",
-  "static/media/tempSocial.svg": "static/media/tempSocial.fabff95b.svg"
+  "static/media/tempSocial.svg": "static/media/tempSocial.fabff95b.svg",
+  "static/media/upoint-ficon.eot": "static/media/upoint-ficon.09a1ccaa.eot",
+  "static/media/upoint-ficon.svg": "static/media/upoint-ficon.aff449a2.svg",
+  "static/media/upoint-ficon.ttf": "static/media/upoint-ficon.bd6b8b1a.ttf",
+  "static/media/upoint-ficon.woff": "static/media/upoint-ficon.0cb1ef65.woff"
 }
