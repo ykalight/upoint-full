@@ -1,5 +1,5 @@
 .Related-block{
-    background-color:#fff;
+    background-color: $related-content-bg-color;
 
     .relatedItems{
         display: grid;
@@ -8,9 +8,11 @@
         justify-items: center;
         align-items: top;
         padding:12px;
+        // transition: 0.8s;
+
 
         a.related{
-            color: $app-blue;
+            color: $related-item-link-color;
             transition: 0.8s;
             display:block;
             text-align: center;
@@ -18,16 +20,16 @@
             padding:18px;
     
             h4{@include font(1.2, 'Regular'); margin:12px auto 0 auto; max-width:220px}
-            p{@include font(.8, 'Regular'); color: $app-medgray; margin:12px auto 0 auto; max-width:220px}
+            p{@include font(.8, 'Regular'); color: $related-item-small-text-color; margin:12px auto 0 auto; max-width:220px}
     
             img{
                 max-width:130px;
                 max-height:130px;
-                @include border-radius(100%);
+                @include border-radius( $related-item-img-border-radius );
                 margin:auto;
             }
     
-            &:hover{background-color: lighten($app-lightgray, 1%); @include border-radius(18px)}
+            &:hover{background-color: $related-item-bg-hover-color; @include border-radius($related-item-bg-border-radius)}
         }
 
         @media only screen and (max-width: $medium) {
@@ -51,7 +53,7 @@
             align-items: center;
             
             a.related{
-                border-bottom: solid 1px lighten($app-gray, 6%);
+                border-bottom: $related-item-smallview-border-bottom;
                 display:grid;
                 grid-template-columns: 80px auto;
                 align-items: center;

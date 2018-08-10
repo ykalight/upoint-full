@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Button from '../Common/Button';
 import uuid from 'uuid';
 import RelatedItem from './RelatedItem';
+import FadeIn from 'react-fade-in';
 
 class Related extends Component {
   constructor(){
@@ -44,7 +45,9 @@ class Related extends Component {
     if(this.props.relateddata){
       relatedItems = this.props.relateddata.slice(0, `${this.state.show}`).map(related => {
         return (
-          <RelatedItem key={uuid.v4()} related={related} onClick={this.scrollToTop} />
+          <FadeIn transitionDuration="500">
+            <RelatedItem key={uuid.v4()} related={related} onClick={this.scrollToTop} />
+          </FadeIn>
         )
       });
     }
@@ -72,16 +75,3 @@ class Related extends Component {
 }
 
 export default Related;
-
-
-// static propTypes = {
-//   in: PropTypes.bool,
-//   interval: PropTypes.number,
-//   delay: PropTypes.number,
-//   children: PropTypes.node
-// }
-// static defaultProps = {
-//   in: false,
-//   interval: 50,
-//   delay: 6000
-// }

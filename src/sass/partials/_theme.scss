@@ -44,6 +44,7 @@ $header-message-bt-hover-color:  rgba(5, 26, 52, .4);
 
 // ====================================  NAV  ===================================================
 $nav-text-color: #fff;
+$nav-active-text-color: lighten($app-blue, 10%);
 $nav-second-tier-bg-color: rgba(0, 0, 0, .9);
 $nav-second-tier-text-color: #fff;
 $mobile-nav-bt-divider: solid 1px rgba(255, 255, 255, .2);
@@ -81,4 +82,12 @@ $card-panel-divider-color: $app-gray;
 $nonexpand-card-link-color: $app-blue;
 
 
+// ====================================  RELATED CONTENT  ========================================
+$related-content-bg-color: #fff;
+$related-item-link-color: $app-blue;
+$related-item-small-text-color: $app-medgray;
+$related-item-bg-hover-color: lighten($app-lightgray, 1%);
+$related-item-bg-border-radius: 18px;
+$related-item-smallview-border-bottom: solid 1px lighten($app-gray, 6%);
+$related-item-img-border-radius: 100%;
 

@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'; 
 import Route from 'react-router-dom/Route';
-import ReactDrawer from 'react-drawer';
+// import ReactDrawer from 'react-drawer';
 import Subnav from '../Subnav/Subnav';
+import FadeIn from 'react-fade-in';
 import 'react-drawer/lib/react-drawer.css';
 import subnav_Savings from '../../data/subnav_savings.json';
 import subnav_Health from '../../data/subnav_health.json';
 import subnav_Work from '../../data/subnav_work.json';
+
 
 class DynView extends Component {
   constructor(props) {
     super(props);
     this.state = {
       open: false,
-      position: 'bottom',
+      position: 'top',
       noOverlay: true,
       data_savings: [],
       data_health: [],
@@ -61,31 +63,26 @@ class DynView extends Component {
 
   render() {
     return (
-      <Router>
+      <FadeIn>
         <div className="dviewWrapper">
-          <div className="container subnav-container">
-          <h1>{this.props.pgtitle}</h1>
+          <Router onUpdate={() => window.scrollTo(0, 0)}>
+            <div className="container subnav-container">
+              <h1>{this.props.pgtitle}</h1>
+              
+              <Route exact strict path='/savings' render={()=> {return(
+                <Subnav subnavdata={this.state.data_savings} />
+              )}} />
 
-          <Route exact strict path='/savings' render={()=> {return(
-            <Subnav subnavdata={this.state.data_savings} />
-          )}} />
+              <Route exact strict path='/health' render={()=> {return(
+                <Subnav subnavdata={this.state.data_health} />
+              )}} />
 
-          <Route exact strict path='/health' render={()=> {return(
-            <Subnav subnavdata={this.state.data_health} />
-          )}} />
+              <Route exact strict path='/work' render={()=> {return(
+                <Subnav subnavdata={this.state.data_work} />
+              )}} />
+            </div>
+          </Router>
 
-          <Route exact strict path='/work' render={()=> {return(
-            <Subnav subnavdata={this.state.data_work} />
-          )}} />
-
-          </div>
-          <ReactDrawer
-            open={this.state.open}
-            position={this.state.position}
-            onClose={this.onDrawerClose}
-            noOverlay={this.state.noOverlay}>
-            <i onClick={this.closeDrawer} className="icono-cross"></i>
-            
             <div className="dviewContentContainer">
                 <div className="container" style={this.props.divstyle}>
                   <div className="tempCards">
@@ -94,10 +91,9 @@ class DynView extends Component {
                   </div>
                 </div>
             </div>
-
-          </ReactDrawer>
+            
           </div>
-      </Router>
+      </FadeIn>
     );
   }
 }

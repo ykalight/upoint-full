@@ -41,6 +41,26 @@
   font-weight: bold;
   font-style: bold;
 }
+@font-face {
+  font-family: "upoint-ficon";
+  src: url("../font/EOT/upoint-ficon.eot");
+  src: local("☺"), url("../font/WOFF/upoint-ficon.woff") format("woff"), url("../font/SVG/upoint-ficon.svg") format("svg"), url("../font/Web_TTF/upoint-ficon.ttf") format("truetype");
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../font/EOT/icomoon.eot");
+  src: local("☺"), url("../font/WOFF/icomoon.woff") format("woff"), url("../font/SVG/icomoon.svg") format("svg"), url("../font/Web_TTF/icomoon.ttf") format("truetype");
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   font-size: 62.5%;
 }
@@ -515,6 +535,14 @@ footer .container {
   display: none;
 }
 
+.icomoon {
+  font-family: "icomoon";
+}
+
+.upoint-ficon {
+  font-family: "upoint-ficon";
+}
+
 header {
   transition: 0.2s;
   color: #fff;
@@ -646,6 +674,9 @@ nav li {
 }
 nav li a {
   color: #fff;
+}
+nav li a.active {
+  color: #56bfdf;
 }
 nav li div {
   -webkit-animation-name: navlink;
@@ -1203,10 +1234,9 @@ nav li div li a {
   height: auto;
 }
 
-.dviewWrapper .react-drawer-drawer {
-  position: relative;
-  background-color: #ededed;
-  height: auto;
+.dviewContentContainer {
+  margin: 8px 0;
+  padding: 3px;
 }
 
 .subnav-container {
@@ -1267,11 +1297,6 @@ nav li div li a {
   background-size: 1430px;
 }
 
-.dviewContentContainer {
-  margin: 8px 0;
-  padding: 3px;
-}
-
 .Head-profile .profile-dropdown {
   position: absolute;
   right: 0;
@@ -1327,16 +1352,8 @@ nav li div li a {
   width: 28px;
   height: 28px;
 }
-.toolbox-editor-wrapper .toolItem .pin svg {
-  transition: 0.4s;
-}
-.toolbox-editor-wrapper .toolItem .pin svg:hover {
-  background-color: whitesmoke;
-  /* usage @import border-radius(12px) */
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
+.toolbox-editor-wrapper .toolItem .icon-pushpin:before {
+  content: "";
 }
 
 footer {

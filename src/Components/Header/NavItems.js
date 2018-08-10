@@ -54,11 +54,11 @@ class NavItems extends Component {
             return (
                 <li>
                     <NavLink exact activeClassName={"active"} to={this.props.nav.destination} onClick={this.toggleShow} onBlur={this.hide}>{this.props.nav.title} <MdKeyboardArrowDown style={{width: '18px', height: '18px'}} /></NavLink>
-                    <div style={divStyle}>
-                        <ul>
-                            {this.state.show && (more_links)}
-                        </ul>
-                    </div>
+                    {this.state.show && (
+                        <div style={divStyle}>
+                            <ul>{more_links}</ul>
+                        </div>
+                    )}
                 </li>
             ) 
         } else {

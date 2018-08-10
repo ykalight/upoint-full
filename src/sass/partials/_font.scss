@@ -53,3 +53,30 @@
     text-rendering: optimizeLegibility;
     font-weight: bold; font-style: bold;
 }
+
+// Icon Fonts
+@font-face {
+    font-family: 'upoint-ficon';
+    src: url('../font/EOT/upoint-ficon.eot');
+    src: local('☺'),
+        url('../font/WOFF/upoint-ficon.woff') format('woff'),
+        url('../font/SVG/upoint-ficon.svg') format('svg'),
+        url('../font/Web_TTF/upoint-ficon.ttf') format('truetype');
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: normal; font-style: normal;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../font/EOT/icomoon.eot');
+    src: local('☺'),
+        url('../font/WOFF/icomoon.woff') format('woff'),
+        url('../font/SVG/icomoon.svg') format('svg'),
+        url('../font/Web_TTF/icomoon.ttf') format('truetype');
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-weight: normal; font-style: normal;
+}

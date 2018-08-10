@@ -1,30 +1,30 @@
 [
     {
-        "img": "/upoint-full/img/tempPhoto_01.jpg",
+        "img": "/img/tempPhoto_01.jpg",
         "title": "Get more from your 401(k) account",
         "small": "Tips and advice to boost your retirement savings.",
         "destination": "/savings/more"
     },
     {
-        "img": "/upoint-full/img/tempPhoto_02.jpg",
+        "img": "/img/tempPhoto_02.jpg",
         "title": "Advantages of Roth contributions",
         "small": "Lorem ipsum doloe amit lorem amit.",
         "destination": "/savings/roth"
     },
     {
-        "img": "/upoint-full/img/tempPhoto_03.jpg",
+        "img": "/img/tempPhoto_03.jpg",
         "title": "What to do with unused PTO?",
         "small": "Explore more exciting ways to use your PTO.",
         "destination": "/work/pto"
     },
     {
-        "img": "/upoint-full/img/tempPhoto_04.jpg",
+        "img": "/img/tempPhoto_04.jpg",
         "title": "Lorem extra...",
         "small": "Lorem ipsum extra lorem ipsum extra.",
         "destination": "/blank"
     },
     {
-        "img": "/upoint-full/img/tempPhoto_05.jpg",
+        "img": "/img/tempPhoto_05.jpg",
         "title": "Lorem ipsum extra...",
         "small": "Lorem ipsum extra lorem ipsum extra.",
         "destination": "/blank"

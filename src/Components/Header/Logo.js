@@ -7,7 +7,7 @@ class Logo extends Component {
   render() {
 
     return (
-        <Link to='/dashboard'>
+        <Link to='/'>
           <div className="Head-logo" style={{cursor: 'pointer'}}>
             <img src={logo} alt="Logo" />
           </div>

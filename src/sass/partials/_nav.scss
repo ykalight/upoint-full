@@ -13,7 +13,11 @@ nav{
         font-size: .85em;
         display:inline;
         margin:2em;
-        a{color: $nav-text-color}
+        a{color: $nav-text-color;
+            &.active{
+                color: $nav-active-text-color
+            }
+        }
 
         div{
             -webkit-animation-name: navlink; /* Safari 4.0 - 8.0 */

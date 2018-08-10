@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {MdAddLocation} from 'react-icons/lib/md';
 
 class ToolboxItem extends Component {
 
@@ -10,7 +9,7 @@ class ToolboxItem extends Component {
                 <div className="visual">{this.props.tool.img}</div>
                 <label>{this.props.tool.title}</label>
                 <div className="desc">{this.props.tool.desc}</div>
-                <div className="pin"><MdAddLocation style={{width:'26px', height:'26px', color:'#ccc', cursor:'pointer'}} /></div>
+                <div className="pin upoint-ficon icon-pushpin"></div>
             </div>
         );
     }
